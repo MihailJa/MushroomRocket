@@ -1,0 +1,7 @@
+{
+  "name": "phaser-simplified",
+  "version": "1.0.0",
+  "dependencies": {
+    "phaser": "latest"
+  }
+}
