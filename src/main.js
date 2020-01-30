@@ -2,6 +2,13 @@ let config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
+    physics: {
+        default: 'arcade',
+        arcade: {
+            gravity: { y: 300 },
+            debug: false
+        }
+    },
     scene: {
         preload: preload,
         create: create,
@@ -24,7 +31,7 @@ function preload ()
 function create ()
 {
     this.add.image(400, 300, 'sky');
-    player = this.physics.add.sprite(100, 450, 'dude');
+    player = this.physics.add.sprite(100, 100, 'dude');
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
 }
