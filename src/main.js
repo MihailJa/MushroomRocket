@@ -26,7 +26,7 @@ function create ()
     this.add.image(400, 300, 'sky');
     player = this.physics.add.sprite(100, 450, 'dude');
     player.setBounce(0.2);
-
+    player.setCollideWorldBounds(true);
 }
 
 function update ()
